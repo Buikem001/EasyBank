@@ -14,16 +14,16 @@ html, body{
 a{
     text-decoration: none;
 }
-
 #nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 16px 70px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 16px 70px;
 }
 
-#nav img{
-    width: 80%;
+
+.fylo img{
+    width: 60%;
 }
 
 #nav div a:nth-child(2){
@@ -208,6 +208,9 @@ input[type="email"]{
     
 }
 
+.ri-close-line{
+    display: none;
+}
 .logo{
     width: 70%;
 }
@@ -273,6 +276,10 @@ input[type="email"]{
     font-size:10px;
 }
 
+i{
+    font-size: 22px;
+}
+
 @media screen and (max-width:992px) {
     form{
         flex-direction: column;
@@ -306,6 +313,10 @@ input[type="email"]{
 
     .quote{
         width: 100%;
+    }
+
+    #nav{
+        padding: 16px 40px;
     }
 }
 
@@ -364,6 +375,29 @@ input[type="email"]{
 
         #middle, form{
             flex-direction: column;
+        }
+
+        .toggle{
+            display: block;
+        }
+        .links{
+            position: absolute;
+            background-color: #585989;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            transform: translate(-50%, -50%);
+            left: 50%;
+            top: -6%;
+            padding: 30px 0;
+            gap: 40px;
+            width: 60%;
+            transition: .5s;
+            border-radius: 10px;
+        }
+
+        #nav div a{
+            color: #fff;
         }
     }
 
