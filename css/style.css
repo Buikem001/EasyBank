@@ -280,6 +280,10 @@ i{
     font-size: 22px;
 }
 
+.toggle{
+    display: block;
+}
+
 @media screen and (max-width:992px) {
     form{
         flex-direction: column;
